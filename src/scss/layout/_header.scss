@@ -10,11 +10,11 @@
 
   &.is-show {
     position: fixed;
-    background-color: #fff;
-    color: #000;
+    background-color: $colorWhite;
+    color: $colorBlack;
 
     & .l-header__text {
-      border: 1px solid #000;
+      border: 1px solid $colorBlack;
       &:hover {
         color: $colorWhite;
         background-color: $colorBlack;
@@ -23,7 +23,7 @@
     }
 
     & .l-header__humburger span {
-      background-color: #000;
+      background-color: $colorBlack;
     }
 
     & .l-header__logo {
@@ -55,7 +55,7 @@
   }
   &__humburger {
     width: 50px;
-    height: 18px;
+    height: 50px;
     position: absolute;
     top: 58%;
     right: 4%;
@@ -93,7 +93,7 @@
     transform: translateY(6px) rotate(-45deg);
   }
   &__humburger span:nth-of-type(2) {
-    bottom: 24%;
+    top: 30%;
   }
   &__humburger.active span:nth-of-type(2) {
     transform: translateY(-8px) rotate(45deg);

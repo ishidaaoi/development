@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack --mode development",
     "start": "webpack-dev-server --mode development --watch",
-    "prod": "webpack --mode production"
+    "prod": "webpack --mode production",
+    "fix": "yarn eslint --fix ./src/**/*.js"
   },
   "author": "",
   "license": "ISC",

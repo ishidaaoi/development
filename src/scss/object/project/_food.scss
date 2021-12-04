@@ -62,7 +62,7 @@
     margin-left: 16%;
   }
   &__dinnerPicture {
-    background-image: url("#{$bgPath}dinner_01.jpg");
+    background-image: url('#{$bgPath}dinner_01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
@@ -80,14 +80,13 @@
     width: 18px;
     height: 300px;
     margin-left: 16%;
+    line-height: 1;
     border-left: 1px solid $colorBlack;
     border-right: 1px solid $colorBlack;
   }
   &__shop {
     font-size: 12px;
     margin-left: 2%;
-  }
-  &__ {
   }
   &__ {
   }

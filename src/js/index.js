@@ -48,9 +48,9 @@ $(window).on('scroll', () => {
 });
 
 
-$(function () {
+$(() => {
   $(".js-topHeroList li:nth-child(n+2)").hide();
-  setInterval(function () {
+  setInterval(() => {
     $(".js-topHeroList li:first-child").fadeOut(2000);
     $(".js-topHeroList li:nth-child(2)").fadeIn(2000);
     $(".js-topHeroList li:first-child").appendTo(".js-topHeroList");
