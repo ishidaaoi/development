@@ -11,7 +11,7 @@
   }
 
   &__wrap {
-    max-width: 606px;
+    max-width: 612px;
     width: 48vw;
     overflow-x: scroll;
     white-space: nowrap;
@@ -21,7 +21,7 @@
     line-height: 36px;
   }
   &__floor {
-    background-image: url("#{$bgPath}floor_01.png");
+    background-image: url('#{$bgPath}floor_01.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: block;

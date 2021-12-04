@@ -62,11 +62,10 @@
   }
   &__logo {
     display: block;
-    width: 32px;
-    height: 70px;
+    width: 48px;
     position: absolute;
-    top: 16%;
-    left: 3%;
+    top: 10%;
+    left: 2%;
     opacity: 0;
     transition: 0.7s;
   }
@@ -114,7 +113,7 @@
   }
   &__container {
     background-color: $colorWhite;
-    opacity: 0.8;
+    opacity: 0.9;
     max-width: 1280px;
     width: 100vw;
     display: flex;

@@ -45,6 +45,11 @@
   &__inner {
     font-size: 12px;
     margin-left: 25px;
+    border: 1px solid $colorBlack;
+    height: 13vw;
+    padding: 1%;
+    white-space: nowrap;
+    max-height: 210px;
   }
   &__dinnerTitle {
     // display: block;
