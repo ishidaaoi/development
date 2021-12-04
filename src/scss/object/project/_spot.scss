@@ -1,0 +1,18 @@
+.p-spot {
+  &__wrap {
+    padding-top: 180px;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 14px;
+  }
+  &__title {
+    font-size: 26px;
+    letter-spacing: 7px;
+  }
+  &__text {
+    margin: 70px 0;
+    letter-spacing: 4px;
+  }
+  &__ {
+  }
+}

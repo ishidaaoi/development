@@ -1,0 +1,224 @@
+.l-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: $colorWhite;
+  transition: 0.7s;
+  z-index: 10;
+
+  &.is-show {
+    position: fixed;
+    background-color: #fff;
+    color: #000;
+
+    & .l-header__text {
+      border: 1px solid #000;
+      &:hover {
+        color: $colorWhite;
+        background-color: $colorBlack;
+        transition: 0.8s;
+      }
+    }
+
+    & .l-header__humburger span {
+      background-color: #000;
+    }
+
+    & .l-header__logo {
+      opacity: 1;
+    }
+  }
+
+  &__top {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__reservation {
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    &:hover {
+      color: $colorBlack;
+      background-color: $colorWhite;
+      transition: 0.8s;
+    }
+  }
+  &__text {
+    font-size: 10px;
+    border: 1px solid $colorWhite;
+    padding: 6px 36px;
+    letter-spacing: 2px;
+  }
+  &__humburger {
+    width: 50px;
+    height: 18px;
+    position: absolute;
+    top: 58%;
+    right: 4%;
+  }
+  &__logo {
+    display: block;
+    width: 32px;
+    height: 70px;
+    position: absolute;
+    top: 16%;
+    left: 3%;
+    opacity: 0;
+    transition: 0.7s;
+  }
+  &__humburger span {
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-radius: 5px;
+    background-color: $colorWhite;
+    transition: all 0.5s;
+    z-index: 20;
+  }
+  &__humburger span:nth-of-type(1) {
+    top: 0%;
+    // &:hover {
+    //   top: 30%;
+    //   transition: 0.8s;
+    // }
+  }
+  &__humburger.active span:nth-of-type(1) {
+    transform: translateY(6px) rotate(-45deg);
+  }
+  &__humburger span:nth-of-type(2) {
+    bottom: 24%;
+  }
+  &__humburger.active span:nth-of-type(2) {
+    transform: translateY(-8px) rotate(45deg);
+  }
+  &__ {
+  }
+  &__menu {
+    height: 0;
+    position: fixed;
+    top: 0;
+    transform: translateX(4100%); //js
+    transition: 0.5s; //js
+    color: $colorBlack;
+    &.is-open {
+      //js
+      transform: translateX(0%); //js
+    } //js
+  }
+  &__container {
+    background-color: $colorWhite;
+    opacity: 0.8;
+    max-width: 1280px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: scroll;
+    height: 100vh;
+  }
+  &__menuLogo {
+    max-width: 120px;
+    width: 10vw;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+  }
+  &__inner {
+    display: flex;
+    padding-bottom: 8%;
+  }
+  &__contents {
+    position: relative;
+    top: 4%;
+    left: 70%;
+    max-width: 320px;
+    width: 24vw;
+  }
+  &__ {
+  }
+  &__title {
+    font-size: 12px;
+  }
+  &__subTitle {
+    font-size: 10px;
+    margin-left: 2%;
+  }
+  &__ {
+  }
+  &__menuReservation {
+  }
+  &__menuText {
+    font-size: 12px;
+    text-align: center;
+  }
+  &__menuWord {
+    font-size: 10px;
+    margin-left: 2%;
+  }
+  &__menuInner {
+    display: flex;
+    width: 230px;
+    border: 1px solid $colorBlack;
+    padding: 16px 34px;
+    &:hover {
+      color: $colorWhite;
+      background-color: $colorBlack;
+      transition: 0.8s;
+    }
+  }
+  &__sns {
+    display: flex;
+    margin-top: 20%;
+  }
+  &__facebook {
+    width: 20px;
+    height: 20px;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.5s;
+    }
+  }
+  &__instagram {
+    width: 20px;
+    height: 20px;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.5s;
+    }
+  }
+  &__home {
+    display: block;
+    margin: 18% 0 12%;
+  }
+  &__address {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  &__map {
+    display: block;
+    margin-bottom: 10%;
+  }
+  &__border {
+    border-bottom: 1px solid $colorBlack;
+  }
+  &__company {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-top: 18%;
+  }
+  &__copyright {
+    display: block;
+    margin-top: 10%;
+    font-size: 10px;
+    padding-bottom: 10%;
+  }
+  &__ {
+  }
+}

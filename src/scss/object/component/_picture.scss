@@ -1,0 +1,30 @@
+.c-picture {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  max-width: 1280px;
+  width: 100vw;
+  height: 460px;
+  &--fir {
+    background-image: url("#{$bgPath}top_01.jpg");
+  }
+  &--sec {
+    background-image: url("#{$bgPath}top_02.jpg");
+  }
+  &--thir {
+    background-image: url("#{$bgPath}top_03.jpg");
+  }
+  &--for {
+    background-image: url("#{$bgPath}top_04.jpg");
+  }
+  &--fif {
+    background-image: url("#{$bgPath}food_01.jpg");
+    background-position: center;
+  }
+  &-- {
+  }
+  &-- {
+  }
+  &__ {
+  }
+}

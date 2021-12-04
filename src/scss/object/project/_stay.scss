@@ -1,0 +1,33 @@
+.p-stay {
+  &__wrap {
+    max-width: 880px;
+    width: 69vw;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  &__title {
+    font-size: 26px;
+    margin: 0 26px;
+    line-height: 45px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 36px;
+  }
+  &__picture {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__inner {
+    background-image: url("#{$bgPath}top_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    max-width: 640px;
+    width: 50vw;
+    height: 460px;
+    &--more {
+      background-image: url("#{$bgPath}top_02.jpg");
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.c-box {
+  display: flex;
+
+  &__wrap {
+    background-image: url("#{$bgPath}top_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    max-width: 640px;
+    width: 50vw;
+    height: 460px;
+  }
+  &__ {
+  }
+  &__ {
+  }
+}

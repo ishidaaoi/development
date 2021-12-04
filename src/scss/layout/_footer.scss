@@ -1,0 +1,20 @@
+.l-footer {
+  background-color: $colorGray;
+  padding: 40px 0 20px;
+
+  &__wrap {
+    margin-left: 20px;
+  }
+  &__inner {
+    font-size: 12px;
+  }
+  &__company {
+    font-size: 10px;
+  }
+  &__copyright {
+    font-size: 10px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+}

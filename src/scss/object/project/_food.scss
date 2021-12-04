@@ -1,0 +1,96 @@
+.p-food {
+  padding: 90px 0 8%;
+  &__wrap {
+    max-width: 880px;
+    width: 69vw;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  &__container {
+    font-size: 17px;
+  }
+  &__title {
+    font-size: 26px;
+    margin: 0 26px;
+    line-height: 45px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 36px;
+  }
+  &__dinnerWrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    max-width: 876px;
+    width: 69vw;
+    height: 30vw;
+    margin: 0 auto 8%;
+    &--center {
+      border-bottom: 1px solid $colorBlack;
+    }
+  }
+  &__contents {
+    letter-spacing: 4px;
+    &--more {
+      writing-mode: vertical-rl;
+      text-align: start;
+    }
+    &--center {
+      writing-mode: vertical-rl;
+      text-align: start;
+      margin-bottom: 80px;
+    }
+  }
+  &__inner {
+    font-size: 12px;
+    margin-left: 25px;
+  }
+  &__dinnerTitle {
+    // display: block;
+    font-size: 26px;
+    margin: 0 16px 0 20px;
+    line-height: 45px;
+  }
+  &__dinnerContainer {
+    // display: block;
+    font-size: 17px;
+  }
+  &__dinnerText {
+    font-size: 14px;
+    line-height: 36px;
+    margin-left: 16%;
+  }
+  &__dinnerPicture {
+    background-image: url("#{$bgPath}dinner_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    max-width: 300px;
+    width: 14vw;
+    height: 100px;
+  }
+  &__creator {
+  }
+  &__sample {
+    display: flex;
+  }
+  &__tell {
+    display: block;
+    width: 18px;
+    height: 300px;
+    margin-left: 16%;
+    border-left: 1px solid $colorBlack;
+    border-right: 1px solid $colorBlack;
+  }
+  &__shop {
+    font-size: 12px;
+    margin-left: 2%;
+  }
+  &__ {
+  }
+  &__ {
+  }
+  &__ {
+  }
+}

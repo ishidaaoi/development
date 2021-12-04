@@ -1,0 +1,36 @@
+.p-topHero {
+  position: relative;
+
+  &__topLogo {
+    background-image: url("#{$bgPath}toplogo_01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 190px;
+    height: 340px;
+    position: absolute;
+    top: 26%;
+    left: 42%;
+    z-index: 10;
+  }
+
+  &__list {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  &__item {
+    background-image: url("#{$bgPath}top_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &__ {
+  }
+  &__ {
+  }
+}
