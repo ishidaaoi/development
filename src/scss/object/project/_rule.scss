@@ -1,17 +1,23 @@
 .p-rule {
   &__wrap {
-    max-width: 668px;
-    width: 54vw;
-    overflow-x: scroll;
-    white-space: nowrap;
+    @include mq(o-sp) {
+      max-width: 668px;
+      width: 54vw;
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
   }
   &__title {
-    font-size: 26px;
-    margin: 0 26px;
-    line-height: 45px;
+    @include mq(o-sp) {
+      font-size: 26px;
+      margin: 0 26px;
+      line-height: 45px;
+    }
   }
   &__text {
-    font-size: 14px;
-    line-height: 36px;
+    @include mq(o-sp) {
+      font-size: 14px;
+      line-height: 36px;
+    }
   }
 }

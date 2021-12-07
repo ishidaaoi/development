@@ -1,9 +1,17 @@
 .c-frame {
-  display: flex;
-  flex-wrap: wrap;
-  writing-mode: vertical-rl;
-  text-align: start;
   margin: 0 auto;
-  padding: 180px 0 14%;
-  letter-spacing: 4px;
+  @include mq(u-sp) {
+    // height: 100vh;
+    letter-spacing: 2px;
+    padding: 86px 0 10%;
+    text-align: justify;
+  }
+  @include mq(o-sp) {
+    letter-spacing: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    writing-mode: vertical-rl;
+    text-align: start;
+    padding: 180px 0 14%;
+  }
 }

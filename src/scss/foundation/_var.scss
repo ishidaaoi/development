@@ -2,11 +2,11 @@
 $breakSP: 768;
 $breakPC: 950;
 $breakpoints: (
-  "u-sp": "print, screen and (max-width: #{$breakSP}px)",
-  "o-sp": "print, screen and (min-width: #{$breakSP + 1}px)",
-  "sp-pc":
-    "print, screen and (max-width: #{$breakPC}px) and (min-width: #{$breakSP + 1}px)",
-  "o-pc": "print, screen and (min-width: #{$breakPC + 1}px)",
+  'u-sp': 'print, screen and (max-width: #{$breakSP}px)',
+  'o-sp': 'print, screen and (min-width: #{$breakSP + 1}px)',
+  'sp-pc':
+    'print, screen and (max-width: #{$breakPC}px) and (min-width: #{$breakSP + 1}px)',
+  'o-pc': 'print, screen and (min-width: #{$breakPC + 1}px)',
 ) !default;
 @mixin mq($breakpoint) {
   @media #{inspect(map-get($breakpoints, $breakpoint))} {
@@ -22,13 +22,13 @@ $breakpoints: (
 }
 
 // PATH
-$bgPath: "../../assets/images/";
+$bgPath: '../../assets/images/';
 
 // COLOR
 $colorGray: #efefef;
 $colorWhite: #fff;
 $colorBlack: #222;
+$colorDarkGray: #666;
 
 $colorNormal: #2496cd;
 $colorDark: #012c45;
-$colorDarkGray: #666;

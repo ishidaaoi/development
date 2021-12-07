@@ -1,21 +1,48 @@
 .p-about {
   &__wrap {
-    max-width: 880px;
-    width: 69vw;
-    overflow-x: scroll;
-    white-space: nowrap;
+    @include mq(u-sp) {
+      max-width: 400px;
+      width: 80vw;
+      margin: 0 auto;
+    }
+    @include mq(o-sp) {
+      max-width: 880px;
+      width: 69vw;
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
   }
   &__container {
-    font-size: 17px;
+    @include mq(u-sp) {
+      font-size: 15px;
+      text-align: center;
+    }
+    @include mq(o-sp) {
+      font-size: 17px;
+    }
   }
   &__title {
-    font-size: 26px;
-    margin: 0 26px;
-    line-height: 45px;
+    @include mq(u-sp) {
+      font-size: 20px;
+      text-align: center;
+      margin: 10px 0 20px;
+      line-height: 35px;
+    }
+    @include mq(o-sp) {
+      font-size: 26px;
+      margin: 0 26px;
+      line-height: 45px;
+    }
   }
   &__text {
-    font-size: 14px;
-    line-height: 36px;
+    @include mq(u-sp) {
+      font-size: 12px;
+      line-height: 25px;
+    }
+    @include mq(o-sp) {
+      font-size: 14px;
+      line-height: 36px;
+    }
   }
 
   &__ {

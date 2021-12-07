@@ -1,33 +1,58 @@
 .p-stay {
   &__wrap {
-    max-width: 880px;
-    width: 69vw;
-    overflow-x: scroll;
-    white-space: nowrap;
+    @include mq(u-sp) {
+      max-width: 400px;
+      width: 80vw;
+      margin: 0 auto;
+    }
+    @include mq(o-sp) {
+      max-width: 880px;
+      width: 69vw;
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
   }
   &__title {
-    font-size: 26px;
-    margin: 0 26px;
-    line-height: 45px;
+    @include mq(u-sp) {
+      font-size: 20px;
+      margin: 0 0 26px;
+      line-height: 35px;
+      text-align: center;
+    }
+    @include mq(o-sp) {
+      font-size: 26px;
+      margin: 0 26px;
+      line-height: 45px;
+    }
   }
   &__text {
-    font-size: 14px;
-    line-height: 36px;
+    @include mq(u-sp) {
+      font-size: 12px;
+      line-height: 25px;
+    }
+    @include mq(o-sp) {
+      font-size: 14px;
+      line-height: 36px;
+    }
   }
   &__picture {
-    display: flex;
-    flex-wrap: wrap;
+    @include mq(o-sp) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   &__inner {
-    background-image: url("#{$bgPath}top_01.jpg");
+    background-image: url('#{$bgPath}top_01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
-    max-width: 640px;
-    width: 50vw;
-    height: 460px;
+    @include mq(o-sp) {
+      max-width: 640px;
+      width: 50vw;
+      height: 460px;
+    }
     &--more {
-      background-image: url("#{$bgPath}top_02.jpg");
+      background-image: url('#{$bgPath}top_02.jpg');
     }
   }
 }

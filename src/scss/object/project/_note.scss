@@ -1,36 +1,42 @@
 .p-note {
   &__frame {
-    // display: flex;
     flex-wrap: wrap;
     writing-mode: vertical-rl;
     text-align: start;
-    margin: 0 auto;
-    padding: 90px 0;
-    letter-spacing: 4px;
-    border-top: 1px solid $colorBlack;
+    @include mq(o-sp) {
+      margin: 0 auto;
+      padding: 90px 0;
+      letter-spacing: 4px;
+      border-top: 1px solid $colorBlack;
+    }
   }
 
   &__wrap {
     max-width: 612px;
     width: 48vw;
-    overflow-x: scroll;
-    white-space: nowrap;
+    @include mq(o-sp) {
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
   }
   &__text {
-    font-size: 14px;
-    line-height: 36px;
+    @include mq(o-sp) {
+      font-size: 14px;
+      line-height: 36px;
+    }
   }
   &__floor {
-    background-image: url('#{$bgPath}floor_01.png');
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
-    max-width: 1000px;
-    width: 80vw;
-    height: 38vw;
-    margin: 0 auto 16%;
+    @include mq(o-sp) {
+      background-image: url('#{$bgPath}floor_01.png');
+      max-width: 1000px;
+      width: 80vw;
+      height: 38vw;
+      margin: 0 auto 16%;
+    }
   }
-
   &__ {
   }
 }

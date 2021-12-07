@@ -1,50 +1,88 @@
 .p-message {
   &__logo {
     display: block;
-    max-width: 150px;
-    width: 11vw;
-    height: 100px;
     margin: 0 auto;
-    padding-top: 100px;
-  }
-  &__wrap {
-    margin-top: 300px;
-  }
-  &__text {
-    letter-spacing: 4px;
-    font-size: 14px;
-    line-height: 2.5;
-    text-align: center;
-    &--more {
-      margin-top: 100px;
+    @include mq(u-sp) {
+      max-width: 150px;
+      width: 18vw;
+      padding-top: 80px;
+    }
+    @include mq(o-sp) {
+      max-width: 150px;
+      width: 11vw;
+      height: 100px;
+      padding-top: 100px;
     }
   }
-
+  &__wrap {
+    @include mq(u-sp) {
+      max-width: 400px;
+      width: 80vw;
+      margin: 100px auto 0;
+      text-align: center;
+    }
+    @include mq(o-sp) {
+      margin-top: 300px;
+    }
+  }
+  &__text {
+    text-align: center;
+    @include mq(u-sp) {
+      letter-spacing: 2px;
+      font-size: 12px;
+      line-height: 25px;
+      &--more {
+        margin-top: 80px;
+      }
+    }
+    @include mq(o-sp) {
+      letter-spacing: 4px;
+      font-size: 14px;
+      line-height: 2.5;
+      &--more {
+        margin-top: 100px;
+      }
+    }
+  }
   &__map {
     display: block;
-    letter-spacing: 4px;
-    font-size: 10px;
-    line-height: 2;
     text-align: center;
     text-decoration: underline;
+    @include mq(o-sp) {
+      letter-spacing: 4px;
+      font-size: 10px;
+      line-height: 2;
+    }
   }
   &__reservation {
     display: block;
     margin-top: 30px;
   }
   &__button {
-    font-size: 12px;
-    border: 1px solid $colorBlack;
-    max-width: 260px;
-    width: 20vw;
-    padding: 20px;
-    margin: 0 auto;
-    text-align: center;
-    letter-spacing: 1px;
-    &:hover {
-      color: $colorWhite;
-      background-color: $colorBlack;
-      transition: 0.8s;
+    @include mq(u-sp) {
+      font-size: 12px;
+      border: 1px solid $colorBlack;
+      max-width: 260px;
+      width: 62vw;
+      padding: 3px 4px;
+      margin: 0 auto;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    @include mq(o-sp) {
+      font-size: 12px;
+      border: 1px solid $colorBlack;
+      max-width: 260px;
+      width: 20vw;
+      padding: 20px;
+      margin: 0 auto;
+      text-align: center;
+      letter-spacing: 1px;
+      &:hover {
+        color: $colorWhite;
+        background-color: $colorBlack;
+        transition: 0.8s;
+      }
     }
   }
   &__ {
@@ -52,21 +90,33 @@
   &__icon {
     display: flex;
     justify-content: center;
+    // @include mq(o-sp) {
     margin-top: 6%;
     padding-bottom: 10%;
+    // }
   }
   &__facebook {
-    width: 30px;
-    &:hover {
-      opacity: 0.5;
-      transition: 0.5s;
+    @include mq(u-sp) {
+      width: 20px;
+    }
+    @include mq(o-sp) {
+      width: 30px;
+      &:hover {
+        opacity: 0.5;
+        transition: 0.5s;
+      }
     }
   }
   &__instagram {
-    width: 30px;
-    &:hover {
-      opacity: 0.5;
-      transition: 0.5s;
+    @include mq(u-sp) {
+      width: 20px;
+    }
+    @include mq(o-sp) {
+      width: 30px;
+      &:hover {
+        opacity: 0.5;
+        transition: 0.5s;
+      }
     }
   }
 }

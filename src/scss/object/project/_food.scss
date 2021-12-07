@@ -1,31 +1,62 @@
 .p-food {
   padding: 90px 0 8%;
   &__wrap {
-    max-width: 880px;
-    width: 69vw;
-    overflow-x: scroll;
-    white-space: nowrap;
+    @include mq(u-sp) {
+      max-width: 400px;
+      width: 80vw;
+      margin: 0 auto;
+    }
+    @include mq(o-sp) {
+      max-width: 880px;
+      width: 69vw;
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
   }
   &__container {
-    font-size: 17px;
+    @include mq(u-sp) {
+      font-size: 15px;
+      text-align: center;
+    }
+    @include mq(o-sp) {
+      font-size: 17px;
+    }
   }
   &__title {
-    font-size: 26px;
-    margin: 0 26px;
-    line-height: 45px;
+    @include mq(u-sp) {
+      font-size: 20px;
+      margin: 0 0 26px;
+      line-height: 35px;
+      text-align: center;
+    }
+    @include mq(o-sp) {
+      font-size: 26px;
+      margin: 0 26px;
+      line-height: 45px;
+    }
   }
   &__text {
-    font-size: 14px;
-    line-height: 36px;
+    @include mq(u-sp) {
+      font-size: 12px;
+      line-height: 25px;
+    }
+    @include mq(o-sp) {
+      font-size: 14px;
+      line-height: 36px;
+    }
   }
   &__dinnerWrap {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    max-width: 876px;
-    width: 69vw;
-    height: 30vw;
-    margin: 0 auto 8%;
+    @include mq(o-sp) {
+      max-width: 876px;
+      width: 69vw;
+      height: 30vw;
+      margin: 0 auto 8%;
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
     &--center {
       border-bottom: 1px solid $colorBlack;
     }
@@ -33,47 +64,61 @@
   &__contents {
     letter-spacing: 4px;
     &--more {
-      writing-mode: vertical-rl;
-      text-align: start;
+      @include mq(o-sp) {
+        writing-mode: vertical-rl;
+        text-align: start;
+      }
     }
     &--center {
-      writing-mode: vertical-rl;
-      text-align: start;
-      margin-bottom: 80px;
+      @include mq(o-sp) {
+        writing-mode: vertical-rl;
+        text-align: start;
+        margin-bottom: 80px;
+      }
     }
   }
   &__inner {
-    font-size: 12px;
-    margin-left: 25px;
-    border: 1px solid $colorBlack;
-    height: 13vw;
-    padding: 1%;
-    white-space: nowrap;
-    max-height: 210px;
+    @include mq(o-sp) {
+      font-size: 12px;
+      margin-left: 25px;
+      border: 1px solid $colorBlack;
+      height: 164px;
+      padding: 1%;
+      white-space: nowrap;
+      max-height: 210px;
+    }
   }
   &__dinnerTitle {
-    // display: block;
-    font-size: 26px;
-    margin: 0 16px 0 20px;
-    line-height: 45px;
+    @include mq(o-sp) {
+      display: block;
+      font-size: 26px;
+      margin: 0 4% 0 6%;
+      line-height: 45px;
+    }
   }
   &__dinnerContainer {
-    // display: block;
-    font-size: 17px;
+    @include mq(o-sp) {
+      display: block;
+      font-size: 17px;
+    }
   }
   &__dinnerText {
-    font-size: 14px;
-    line-height: 36px;
-    margin-left: 16%;
+    @include mq(o-sp) {
+      font-size: 14px;
+      line-height: 2;
+      margin-left: 8%;
+    }
   }
   &__dinnerPicture {
     background-image: url('#{$bgPath}dinner_01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
-    max-width: 300px;
-    width: 14vw;
-    height: 100px;
+    @include mq(o-sp) {
+      max-width: 300px;
+      width: 14vw;
+      height: 100px;
+    }
   }
   &__creator {
   }
@@ -81,19 +126,21 @@
     display: flex;
   }
   &__tell {
-    display: block;
-    width: 18px;
-    height: 300px;
-    margin-left: 16%;
-    line-height: 1;
-    border-left: 1px solid $colorBlack;
-    border-right: 1px solid $colorBlack;
+    @include mq(o-sp) {
+      display: block;
+      width: 18px;
+      height: 200px;
+      margin-left: 16%;
+      line-height: 1;
+      border-left: 1px solid $colorBlack;
+      border-right: 1px solid $colorBlack;
+    }
   }
   &__shop {
-    font-size: 12px;
-    margin-left: 2%;
-  }
-  &__ {
+    @include mq(o-sp) {
+      font-size: 12px;
+      margin-left: 2%;
+    }
   }
   &__ {
   }

@@ -5,12 +5,21 @@
     background-image: url('#{$bgPath}logo_10.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 184px;
-    height: 360px;
-    position: absolute;
-    top: 26%;
-    left: 44%;
-    z-index: 10;
+    z-index: 1;
+    @include mq(u-sp) {
+      width: 100px;
+      height: 200px;
+      position: absolute;
+      top: 26%;
+      left: 42%;
+    }
+    @include mq(o-sp) {
+      width: 184px;
+      height: 360px;
+      position: absolute;
+      top: 26%;
+      left: 44%;
+    }
   }
 
   &__list {
@@ -21,12 +30,20 @@
   &__item {
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 1440px;
-    height: 100vh;
+    background-position: center;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    @include mq(u-sp) {
+      // max-width: 1440px;
+      width: 100%;
+      height: 100vh;
+    }
+    @include mq(o-sp) {
+      max-width: 1440px;
+      height: 100vh;
+    }
     &--fir {
       background-image: url('#{$bgPath}top_01.jpg');
     }

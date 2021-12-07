@@ -2,90 +2,108 @@
   &__wrap {
     max-width: 880px;
     width: 69vw;
-    overflow-x: scroll;
-    white-space: nowrap;
+    @include mq(o-sp) {
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
   }
   &__title {
-    font-size: 26px;
-    margin: 0 26px;
-    line-height: 45px;
+    @include mq(o-sp) {
+      font-size: 26px;
+      margin: 0 26px;
+      line-height: 45px;
+    }
   }
   &__text {
-    font-size: 14px;
-    line-height: 36px;
-  }
-  &__ {
+    @include mq(o-sp) {
+      font-size: 14px;
+      line-height: 36px;
+    }
   }
   &__wood {
-    max-height: 960px;
-    height: 160vw;
+    @include mq(o-sp) {
+      max-height: 960px;
+      height: 160vw;
+    }
   }
   &__light {
-    max-height: 1060px;
-    height: 160vw;
-    position: relative;
-  }
-  &__ {
+    @include mq(o-sp) {
+      max-height: 1060px;
+      height: 160vw;
+      position: relative;
+    }
   }
   &__woodWrap {
-    display: flex;
-    margin: 60px auto;
-    position: relative;
+    @include mq(o-sp) {
+      display: flex;
+      position: relative;
+      margin: 60px auto;
+    }
   }
   &__woodContainer {
-    display: flex;
-    margin: 60px auto;
-    position: relative;
+    @include mq(o-sp) {
+      display: flex;
+      position: relative;
+      margin: 60px auto;
+    }
   }
   &__lightWrap {
-    display: flex;
-    margin: 60px auto;
-    position: relative;
+    @include mq(o-sp) {
+      display: flex;
+      position: relative;
+      margin: 60px auto;
+    }
   }
   &__lightContainer {
-    display: flex;
-    margin: 60px auto;
-    position: relative;
+    @include mq(o-sp) {
+      display: flex;
+      margin: 60px auto;
+      position: relative;
+    }
   }
   &__woodSentence {
-    display: flex;
-    flex-wrap: wrap;
-    writing-mode: vertical-rl;
-    text-align: start;
-    margin: 0 auto;
-    // padding: 180px 0;
-    letter-spacing: 4px;
-    max-width: 400px;
-    width: 32vw;
-    height: 44vw;
-    overflow-x: scroll;
-    white-space: nowrap;
-    position: absolute;
-    top: 500px;
-    right: 14%;
+    @include mq(o-sp) {
+      display: flex;
+      flex-wrap: wrap;
+      writing-mode: vertical-rl;
+      text-align: start;
+      margin: 0 auto;
+      letter-spacing: 4px;
+      max-width: 400px;
+      width: 32vw;
+      height: 44vw;
+      overflow-x: scroll;
+      white-space: nowrap;
+      position: absolute;
+      top: 500px;
+      right: 14%;
+    }
   }
   &__lightSentence {
-    display: flex;
-    flex-wrap: wrap;
-    writing-mode: vertical-rl;
-    text-align: start;
-    margin: 0 auto;
-    // padding: 180px 0;
-    letter-spacing: 4px;
-    max-width: 400px;
-    width: 32vw;
-    height: 44vw;
-    overflow-x: scroll;
-    white-space: nowrap;
-    position: absolute;
-    top: 10%;
-    left: 8%;
+    @include mq(o-sp) {
+      display: flex;
+      flex-wrap: wrap;
+      writing-mode: vertical-rl;
+      text-align: start;
+      margin: 0 auto;
+      letter-spacing: 4px;
+      max-width: 400px;
+      width: 32vw;
+      height: 44vw;
+      overflow-x: scroll;
+      white-space: nowrap;
+      position: absolute;
+      top: 10%;
+      left: 8%;
+    }
   }
   &__woodTitle {
-    display: block;
-    font-size: 18px;
-    margin-left: 25px;
-    line-height: 36px;
+    @include mq(o-sp) {
+      display: block;
+      font-size: 18px;
+      margin-left: 25px;
+      line-height: 36px;
+    }
   }
   &__picture {
     background-size: contain;
@@ -93,82 +111,102 @@
     display: block;
 
     &--fis {
-      background-image: url("#{$bgPath}hinoki_01.jpg");
-      max-width: 250px;
-      width: 20vw;
-      height: 14vw;
-      position: absolute;
-      top: 50px;
-      left: 18%;
+      background-image: url('#{$bgPath}hinoki_01.jpg');
+      @include mq(o-sp) {
+        max-width: 250px;
+        width: 20vw;
+        height: 14vw;
+        position: absolute;
+        top: 50px;
+        left: 18%;
+      }
     }
     &--sec {
-      background-image: url("#{$bgPath}hinoki_02.jpg");
-      max-width: 420px;
-      width: 30vw;
-      height: 20vw;
-      position: absolute;
-      top: 160px;
-      right: 16%;
+      background-image: url('#{$bgPath}hinoki_02.jpg');
+      @include mq(o-sp) {
+        max-width: 420px;
+        width: 30vw;
+        height: 20vw;
+        position: absolute;
+        top: 160px;
+        right: 16%;
+      }
     }
     &--thir {
-      background-image: url("#{$bgPath}hinoki_02.jpg");
-      max-width: 350px;
-      width: 28vw;
-      height: 20vw;
-      position: absolute;
-      top: 380px;
-      left: 18%;
+      background-image: url('#{$bgPath}hinoki_02.jpg');
+      @include mq(o-sp) {
+        max-width: 350px;
+        width: 28vw;
+        height: 20vw;
+        position: absolute;
+        top: 380px;
+        left: 18%;
+      }
     }
     &--for {
-      background-image: url("#{$bgPath}hinoki_02.jpg");
-      max-width: 350px;
-      width: 28vw;
-      height: 20vw;
-      position: absolute;
-      top: 80px;
-      right: 26%;
+      background-image: url('#{$bgPath}hinoki_02.jpg');
+      @include mq(o-sp) {
+        max-width: 350px;
+        width: 28vw;
+        height: 20vw;
+        position: absolute;
+        top: 80px;
+        right: 26%;
+      }
     }
     &--fif {
-      background-image: url("#{$bgPath}hinoki_02.jpg");
-      max-width: 350px;
-      width: 28vw;
-      height: 20vw;
-      position: absolute;
-      top: 360px;
-      right: 8%;
+      background-image: url('#{$bgPath}hinoki_02.jpg');
+      @include mq(o-sp) {
+        max-width: 350px;
+        width: 28vw;
+        height: 20vw;
+        position: absolute;
+        top: 360px;
+        right: 8%;
+      }
     }
   }
   &__lightPicture {
-    background-image: url("#{$bgPath}hinoki_02.jpg");
-    max-width: 650px;
-    width: 50vw;
-    height: 36vw;
-    position: absolute;
-    top: 600px;
-    left: 8%;
+    background-image: url('#{$bgPath}hinoki_02.jpg');
+    @include mq(o-sp) {
+      max-width: 650px;
+      width: 50vw;
+      height: 36vw;
+      position: absolute;
+      top: 600px;
+      left: 8%;
+    }
   }
 
   &__woodAttention {
-    font-size: 11px;
+    @include mq(o-sp) {
+      font-size: 11px;
+    }
   }
   &__woodText {
-    font-size: 14px;
-    line-height: 36px;
-  }
-  &__ {
+    @include mq(o-sp) {
+      font-size: 14px;
+      line-height: 36px;
+    }
   }
   &__lightTitle {
-    display: block;
-    font-size: 18px;
-    margin-left: 25px;
-    line-height: 36px;
+    @include mq(o-sp) {
+      display: block;
+      font-size: 18px;
+      margin-left: 25px;
+      line-height: 36px;
+    }
   }
   &__lightText {
-    font-size: 14px;
-    line-height: 36px;
+    @include mq(o-sp) {
+      font-size: 14px;
+      line-height: 36px;
+    }
   }
   &__lightAttention {
-    font-size: 11px;
+    @include mq(o-sp) {
+      font-size: 11px;
+    }
   }
 
   &__ {

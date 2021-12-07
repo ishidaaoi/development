@@ -2,13 +2,20 @@
   display: flex;
 
   &__wrap {
-    background-image: url("#{$bgPath}top_01.jpg");
+    background-image: url('#{$bgPath}top_01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
-    max-width: 640px;
-    width: 50vw;
-    height: 460px;
+    @include mq(u-sp) {
+      max-width: 400px;
+      width: 50vw;
+      height: 300px;
+    }
+    @include mq(o-sp) {
+      max-width: 640px;
+      width: 50vw;
+      height: 460px;
+    }
   }
   &__ {
   }
