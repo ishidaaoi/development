@@ -89,11 +89,17 @@ $(() => {
 
 
 $(() => {
-  $(".js-inner").hide(); //デフォルトではddを隠す
+  $(".js-inner").hide();
    const $Button = $(".js-box");
   $Button.on("click",() => {
     $(".js-inner").slideToggle();
-  const $sign =  $(".js-inner");
-    $sign.toggleClass("open");
+  const $sign =  $(".p-info__box");
+    $sign.toggleClass("move");
   })
 });
+// $(() => {
+//    const $Button = $(".js-box");
+//   $Button.on("click",() => {
+//     $(this).addClass('move');
+//   })
+// });

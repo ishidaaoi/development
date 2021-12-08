@@ -51,6 +51,7 @@
 
   &__container {
     border-bottom: 1px solid $colorBlack;
+    position: relative;
     @include mq(u-sp) {
       display: block;
       margin: 40px auto 0;
@@ -66,7 +67,7 @@
   }
   &__spBox {
     display: flex;
-    // justify-content: space-between;
+    white-space: nowrap;
   }
   &__day {
     font-size: 10px;
@@ -169,17 +170,34 @@
       }
     }
   }
+  &__text {
+    margin-left: 10%;
+  }
   &__box {
-    display: block;
+    width: 20px;
+    // margin-left: 440px;
+    &::before {
+      content: '';
+      display: block;
+      left: 3px;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid $colorDarkGray;
+      border-right: 2px solid $colorDarkGray;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(136deg);
+      position: absolute;
+      top: 24%;
+      left: 96%;
+      &.move {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(359deg);
+      }
+    }
   }
   &__innerText {
   }
   &__inner {
-    // position: relative;
-    // top: 0%;
-    // right: 0%;
-    // left: 0%;
-    // text-align: center;
     font-size: 13px;
     margin: 0 auto;
     max-width: 760px;
