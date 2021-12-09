@@ -6,6 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
+    background-position: center;
     @include mq(u-sp) {
       max-width: 400px;
       width: 50vw;
