@@ -36,7 +36,6 @@
     left: 0;
     right: 0;
     @include mq(u-sp) {
-      // max-width: 1440px;
       width: 100%;
       height: 100vh;
     }
@@ -54,7 +53,59 @@
       background-image: url('#{$bgPath}top_04.jpg');
     }
   }
-  &__ {
+  &__scrolldown {
+    @include mq(u-sp) {
+      position: absolute;
+      left: 80%;
+      bottom: 10px;
+      height: 120px;
+      z-index: 10;
+    }
+    @include mq(o-sp) {
+      position: absolute;
+      left: 90%;
+      bottom: 10px;
+      height: 120px;
+      z-index: 10;
+    }
+    &::after {
+      display: block;
+      content: '';
+      /*描画位置*/
+      position: absolute;
+      // top: 250px;
+      // left: 50%;
+      width: 1px;
+      height: 120px;
+      background: $colorWhite;
+      animation: pathmove 2.4s ease-in-out infinite;
+    }
+  }
+  &__scrolldown1 {
+    position: absolute;
+    left: -7px;
+    top: -70%;
+    /*テキストの形状*/
+    color: $colorWhite;
+    font-size: 12px;
+    letter-spacing: 6px;
+    writing-mode: vertical-rl;
+  }
+  @keyframes pathmove {
+    0% {
+      height: 0;
+      top: 0;
+      opacity: 0;
+    }
+    30% {
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      top: 60px;
+      opacity: 0;
+    }
   }
   &__ {
   }

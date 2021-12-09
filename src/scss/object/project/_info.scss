@@ -10,7 +10,6 @@
     }
     @include mq(o-sp) {
       padding-top: 180px;
-      // margin: 0 auto;
     }
   }
   &__title {
@@ -121,18 +120,22 @@
     }
   }
   &__follow {
-    display: inline-block;
-    border-bottom: 1px solid $colorBlack;
     @include mq(u-sp) {
       font-size: 10px;
       letter-spacing: 2px;
-      margin: 6% 32% 0;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      text-decoration: underline;
       white-space: nowrap;
     }
     @include mq(o-sp) {
       font-size: 12px;
       letter-spacing: 3px;
-      margin: 4% 43% 0;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      text-decoration: underline;
       &:hover {
         opacity: 0.5;
         transition: 0.5s;
@@ -175,7 +178,6 @@
   }
   &__box {
     width: 20px;
-    // margin-left: 440px;
     &::before {
       content: '';
       display: block;
