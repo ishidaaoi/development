@@ -13,7 +13,7 @@
       height: 300px;
     }
     @include mq(o-sp) {
-      max-width: 640px;
+      // max-width: 640px;
       width: 50vw;
       height: 460px;
     }

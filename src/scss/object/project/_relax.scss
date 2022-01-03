@@ -71,7 +71,7 @@
       letter-spacing: 4px;
       max-width: 400px;
       width: 32vw;
-      height: 44vw;
+      // height: 44vw;
       overflow-x: scroll;
       white-space: nowrap;
       position: absolute;
@@ -89,7 +89,7 @@
       letter-spacing: 4px;
       max-width: 400px;
       width: 32vw;
-      height: 44vw;
+      // height: 44vw;
       overflow-x: scroll;
       white-space: nowrap;
       position: absolute;
@@ -171,7 +171,7 @@
     @include mq(o-sp) {
       max-width: 650px;
       width: 50vw;
-      height: 36vw;
+      height: 400px;
       position: absolute;
       top: 600px;
       left: 8%;
